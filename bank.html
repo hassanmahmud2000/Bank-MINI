@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home Page</title>
+ </head>
+ <body>
+    <header>
+        <div class="grid grid-cols-2 gap-1 mt-3">
+            <img src="photo/bangladesh-bank-logo-D3A2278B52-seeklogo.com.png" alt="" class="mx-auto w-[100px] h-[100px]">
+            <h1 class="font-bold text-6xl mt-5 pl-[-80px]">Bank <span class="text-yellow-400">Account</span></h1>
+        </div>
+        
+    </header>
+    <section class="grid grid-rows-3 md:grid-cols-3 w-9/12 gap-4 mx-auto mt-16 text-white font-bold text-3xl">
+        <div class="bg-green-400 w-[300px] h-[150px] rounded-lg pl-4 pt-7 pr-3">
+            <h1>Deposit</h1>
+            <h2>$<span id="Deposit-Total">00</span></h2>
+        </div>
+        <div class="bg-orange-400 w-[300px] h-[150px] rounded-lg pl-4 pt-7 pr-3">
+            <h1>Withdraw</h1>
+            <h2>$00</h2>
+        </div>
+        <div class="bg-yellow-400 w-[300px] h-[150px] rounded-lg pl-4 pt-7 pr-3">
+            <h1>Balance</h1>
+            <h2>$<span id="Balance-Total">00</span></h2>
+        </div>
+    </section>
+    <section class="grid grid-rows-2  md:grid-cols-2 mt-8 ">
+        <div class="bg-fuchsia-400 w-9/12 h-52 rounded-lg pl-12 pt-7 mb-3 ml-12 ">
+            <h1 class="text-3xl font-bold mb-4 text-white">Please Deposit</h1>
+            <input type="text" placeholder=" $ Amount Of Deposit" id="input-deposit"><br>
+            <button id="deposit-button" class="bg-yellow-400 hover:bg-orange-500 w-[120px] h-[40px] rounded-md text-white mt-3">Deposit</button>
+
+        </div>
+        <div class="bg-sky-400 ml-12 w-9/12 h-52 rounded-lg pl-12 pt-7">
+            <h1 class=" text-3xl font-bold mb-4 text-white">Please Withdraw</h1>
+            <input type="text" placeholder=" $ Amount Of Withdraw" id="input-withdraw"><br>
+            <button id="withdraw-button" class="bg-yellow-400 hover:bg-orange-500 w-[120px] h-[40px] rounded-md text-white mt-3">Withdraw</button>
+
+        </div>
+    </section>
+    <script src="diposit.js"></script>
+ </body>
+ </html>
