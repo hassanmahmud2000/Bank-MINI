@@ -1,5 +1,5 @@
-// step 1
-document.getElementById ('deposit-button').addEventListener ('click',function () {
+    // step 1
+    document.getElementById ('deposit-button').addEventListener ('click',function () {
     // step 2
     const depositField = document.getElementById ('input-deposit');
     const newDepositAmountSting = depositField.value;
@@ -17,12 +17,12 @@ document.getElementById ('deposit-button').addEventListener ('click',function ()
     depositField.value = '';
     // Balance !!!!!!!
     const previousBalanceElement = document.getElementById ('Balance-Total');
-    const previousBalanceString = BalanceElement.innerText;
+    const previousBalanceString = previousBalanceElement.innerText;
     // String To Number !!!!!!!!
     const previousBalanceTotal = parseFloat (previousBalanceString);
     // Ager Balance ar sathay New Deposit ta Add korbo  !!!!!!!!!!!!!!!!!!!!!!!!
 
-    const currentBalanceTotal = newDepositAmount + previousBalanceTotal;
+    const currentBalanceTotal = previousBalanceTotal  + newDepositAmount;
     previousBalanceElement.innerText = currentBalanceTotal;
     
 })
